@@ -24,7 +24,7 @@
 <meta property="og:description" content="首先咱们要安装Express环境那必须要有node环境和npm，所以这里默认大家都安装了此环境  安装Express在目标文件夹的cmd窗口内执行以下即安装express 1npm install -g express  然后安装express生成器 1npm install -g express-generator  创建Express项目1express 项目名  选择模板引擎并创建项目1e">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-11-23T06:27:31.000Z">
-<meta property="article:modified_time" content="2022-11-23T06:47:27.054Z">
+<meta property="article:modified_time" content="2022-11-25T05:25:25.226Z">
 <meta property="article:author" content="PingAn">
 <meta property="article:tag" content="Express">
 <meta name="twitter:card" content="summary_large_image">
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          551 字
+          604 字
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          5 分钟
+          6 分钟
         
       </span>
     
@@ -288,7 +288,11 @@
 
 <h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">cd projectName &amp;&amp; npm install<br></code></pre></td></tr></table></figure>
 
-<h3 id="运行项目，并开启调试模式"><a href="#运行项目，并开启调试模式" class="headerlink" title="运行项目，并开启调试模式"></a>运行项目，并开启调试模式</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">SET DEBUG=projectName:* &amp; npm start<br></code></pre></td></tr></table></figure>
+<h3 id="运行项目，并开启调试模式"><a href="#运行项目，并开启调试模式" class="headerlink" title="运行项目，并开启调试模式"></a>运行项目，并开启调试模式</h3><p><code>cmd</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">SET DEBUG=projectName:* &amp; npm start<br></code></pre></td></tr></table></figure>
+
+<p><code>powershell</code></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs powershell"><span class="hljs-variable">$env:DEBUG</span>=<span class="hljs-string">&#x27;myapp:*&#x27;</span>; npm <span class="hljs-built_in">start</span><br></code></pre></td></tr></table></figure>
 
 <p>在浏览器中输入localhost:3000查看是否可以正常打开，</p>
 <p>若更改端口在 bin&#x2F;www文件下：</p>
